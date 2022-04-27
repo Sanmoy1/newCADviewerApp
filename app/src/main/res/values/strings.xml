@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NewCADViewerApp</string>
+    <string name="About">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus ut quam luctus tempus eget eu ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sit amet ligula nec nisl tincidunt placerat in vel urna. Curabitur vel risus pulvinar, vulputate risus vitae, elementum sapien. Aliquam erat volutpat. Aenean a cursus magna, at ornare lectus. Mauris viverra luctus dolor vitae blandit. Etiam lobortis non lectus ut gravida.</string>
+    <string name="EditProfileButton">Edit Profile</string>
+    <string name="Username">Hisagi Amage</string>
+    <string name="NameOfPerson">Ashutosh Das</string>
+    <string name="ProfileStat">100</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email_or_phone">Email or Phone Number</string>
+    <string name="password">Password</string>
+    <string name="todo">TODO</string>
+    <string name="friend_request">Friend request</string>
+    <string name="get_started_now_it_s_free">Get started now --- It\'s free!</string>
+    <string name="recruiter">Recruiter</string>
+    <string name="student">Student</string>
+    <string name="Continue">Continue</string>
+    <string name="already_on_demo">Already on demo?</string>
+    <string name="Company_Name">Gensler</string>
+    <string name="Company_about_motto">Our people-centered, “People First” culture and “One Firm-Firm” motto promotes integrated teams that unite to shape the future of cities.</string>
+    <string name="view_profiles_by_company">View</string>
+</resources>

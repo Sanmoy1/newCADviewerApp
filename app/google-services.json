@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "374484247676",
+    "project_id": "newcadviewerapp",
+    "storage_bucket": "newcadviewerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374484247676:android:c65ee6b635335e5f0415f9",
+        "android_client_info": {
+          "package_name": "com.example.newcadviewerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374484247676-h5eafok7igkqr73afabfk4k91fep98ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newcadviewerapp",
+            "certificate_hash": "f03848306ba5e86f4acff918650e2b977968858f"
+          }
+        },
+        {
+          "client_id": "374484247676-l7q2enb8ac44v4ihlpasit4oaphm430q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-NJTY5nPOrWOxvkA7Q63WM_RjmgkuF4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374484247676-l7q2enb8ac44v4ihlpasit4oaphm430q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
