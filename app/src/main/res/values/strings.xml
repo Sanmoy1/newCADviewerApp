@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NewCADViewerApp</string>
+    <string name="app_name">NewAppCADViewerApp</string>
     <string name="About">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus ut quam luctus tempus eget eu ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sit amet ligula nec nisl tincidunt placerat in vel urna. Curabitur vel risus pulvinar, vulputate risus vitae, elementum sapien. Aliquam erat volutpat. Aenean a cursus magna, at ornare lectus. Mauris viverra luctus dolor vitae blandit. Etiam lobortis non lectus ut gravida.</string>
     <string name="EditProfileButton">Edit Profile</string>
     <string name="Username">Hisagi Amage</string>
@@ -21,4 +21,12 @@
     <string name="Company_Name">Gensler</string>
     <string name="Company_about_motto">Our people-centered, “People First” culture and “One Firm-Firm” motto promotes integrated teams that unite to shape the future of cities.</string>
     <string name="view_profiles_by_company">View</string>
+    <string name="post_button">POST</string>
+    <string name="update_profile_information">Update Profile Information</string>
+    <string name="first_name_edit_profile">Name</string>
+    <string name="email_ET">Email</string>
+    <string name="update_profile_btn">Update Profile</string>
+    <string name="username_EditProfile">Username</string>
+    <string name="phone_number_editprof">Phone Number</string>
+    <string name="about_editprofile">About</string>
 </resources>

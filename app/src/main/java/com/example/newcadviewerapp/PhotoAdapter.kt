@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 
-class PhotoAdapter (var context: Context): RecyclerView.Adapter<PhotoAdapter.ViewHolder>() {
+class PhotoAdapter(var context: Context): RecyclerView.Adapter<PhotoAdapter.ViewHolder>() {
 
     var datalist= emptyList<dataModel>()
 
@@ -16,13 +17,13 @@ class PhotoAdapter (var context: Context): RecyclerView.Adapter<PhotoAdapter.Vie
 
         this.datalist=datalist
     }
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
+    class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     {
-        var image: ImageView = itemView.findViewById(R.id.image)
+        var image:ImageView = itemView.findViewById(R.id.image)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoAdapter.ViewHolder {
-        var view= LayoutInflater.from(parent.context).inflate(R.layout.photo_layout,parent,false)//this inflates all the images into the recyclerView
+        var view=LayoutInflater.from(parent.context).inflate(R.layout.photo_layout,parent,false)//this inflates all the images into the recyclerView
         return ViewHolder(view)
 
     }
