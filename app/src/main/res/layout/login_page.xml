@@ -89,7 +89,7 @@
         android:layout_marginTop="100dp"
         android:background="@drawable/curve_edge"
         android:backgroundTint="@color/Aqua"
-        android:onClick="clickbutton"
+
         android:text="@string/sign_in"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
