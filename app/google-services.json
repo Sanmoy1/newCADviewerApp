@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "374484247676",
+    "firebase_url": "https://newcadviewerapp-default-rtdb.firebaseio.com",
     "project_id": "newcadviewerapp",
     "storage_bucket": "newcadviewerapp.appspot.com"
   },
