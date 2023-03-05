@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Apps/newCADviewerApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Apps/newCADviewerApp/app/src/main/res/layout/edit_profile_layout.xml" value="0.33" />
+        <entry key="..\:/Android Apps/newCADviewerApp/app/src/main/res/layout/join_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Apps/newCADviewerApp/app/src/main/res/layout/login_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Apps/newCADviewerApp/app/src/main/res/layout/recruiter_profile_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Apps/newCADviewerApp/app/src/main/res/layout/top_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/drawable/curve_edge.xml" value="0.1915" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/drawable/custom_field.xml" value="0.1915" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/drawable/recruiter_profile_page.xml" value="0.173" />
@@ -13,10 +19,14 @@
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/layout_center_viewpager.xml" value="0.27734375" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/loading_item.xml" value="0.3723958333333333" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/login_page.xml" value="0.358695652173913" />
+<<<<<<< HEAD
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/photo_layout.xml" value="0.259375" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/recruiter_profile_page.xml" value="0.33" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/share_photo.xml" value="0.3697916666666667" />
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/share_photo2.xml" value="0.37083333333333335" />
+=======
+        <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/recruiter_profile_page.xml" value="0.25833333333333336" />
+>>>>>>> 6a96d9e48a2ea54cb02b272316d1e0555b20e059
         <entry key="..\:/Android Studio/NewCADViewerApp/app/src/main/res/layout/top_profile.xml" value="0.36666666666666664" />
       </map>
     </option>
