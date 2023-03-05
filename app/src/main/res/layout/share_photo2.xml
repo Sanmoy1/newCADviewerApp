@@ -31,7 +31,7 @@
                 </ImageView>
 
                 <ImageView
-                    android:id="@+id/share_post_buttom"
+                    android:id="@+id/share_post_button"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_alignParentEnd="true"

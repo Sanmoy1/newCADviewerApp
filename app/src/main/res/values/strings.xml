@@ -28,4 +28,5 @@
     <string name="to_decline_share_post">to decline share post</string>
     <string name="share_the_post_into_feed">Share the post into feed</string>
     <string name="preveiw_of_the_image_to_be_posted">preveiw of the image to be posted</string>
+    <string name="uploading">Uploading!</string>
 </resources>
