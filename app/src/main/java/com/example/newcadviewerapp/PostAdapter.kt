@@ -1,5 +1,6 @@
 package com.example.newcadviewerapp
 
+/*
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -60,3 +61,4 @@ interface IPostAdapter {
 }
 
 
+*/

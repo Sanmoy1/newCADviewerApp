@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewCADViewerApp">
         <activity
-            android:name=".LoginActivity"
+            android:name=".SearchProfiles"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ShareMedia"/>
         <activity android:name=".JoinActivity"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".RecruiterProfile" />
         <activity android:name=".EditProfile"/>
+        <activity android:name=".LoginActivity"/>
     </application>
 
 </manifest>

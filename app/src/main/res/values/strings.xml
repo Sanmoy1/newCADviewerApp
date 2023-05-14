@@ -21,7 +21,7 @@
     <string name="Company_Name">Gensler</string>
     <string name="Company_about_motto">Our people-centered, “People First” culture and “One Firm-Firm” motto promotes integrated teams that unite to shape the future of cities.</string>
     <string name="view_profiles_by_company">View</string>
-<<<<<<< HEAD
+
     <string name="add_pictures">add pictures</string>
     <string name="search_for_recruiter_and_peers">search for recruiter and peers</string>
     <string name="profile_page">profile page</string>
@@ -30,7 +30,7 @@
     <string name="share_the_post_into_feed">Share the post into feed</string>
     <string name="preveiw_of_the_image_to_be_posted">preveiw of the image to be posted</string>
     <string name="uploading">Uploading!</string>
-=======
+
     <string name="post_button">POST</string>
     <string name="update_profile_information">Update Profile Information</string>
     <string name="first_name_edit_profile">Name</string>
@@ -39,5 +39,5 @@
     <string name="username_EditProfile">Username</string>
     <string name="phone_number_editprof">Phone Number</string>
     <string name="about_editprofile">About</string>
->>>>>>> 6a96d9e48a2ea54cb02b272316d1e0555b20e059
+
 </resources>
