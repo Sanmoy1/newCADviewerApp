@@ -57,11 +57,14 @@ class SearchProfiles: AppCompatActivity() {
             override fun onQueryTextChange(newText: String): Boolean {
                 val usersRef = FirebaseDatabase.getInstance().reference.child("Users")
                 val firebaseSearchQuery: Query
+
              val newText1 = newText.lowercase()
              val queri = newText1.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
                 if (queri.isEmpty()) {
                     firebaseSearchQuery = usersRef
+                    recyclerSearch.visibility = View.GONE //when nothing written in searchbar
                 } else {
+                    recyclerSearch.visibility = View.VISIBLE //if query is written now visible
                     val searchField = if (queri.contains("@")) {
                         "Email Id"
                     } else {

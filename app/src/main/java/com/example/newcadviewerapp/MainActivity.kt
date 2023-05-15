@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var photoAdapter: PhotoAdapter
     lateinit var editProfileBtn: Button
     lateinit var add_picture_button_bottomnav:ImageButton
+    lateinit var search_button: ImageButton
     private var dataList=mutableListOf<dataModel>()
 
     companion object{
@@ -44,6 +45,12 @@ class MainActivity : AppCompatActivity() {
         {
             val a = Intent(this, ShareMedia::class.java)
             startActivity(a)
+        }
+
+        search_button = findViewById(R.id.search_button_bottomnav)
+        search_button.setOnClickListener()
+        {
+            startActivity(Intent(this,SearchProfiles::class.java))
         }
 
         dataList.add(dataModel(R.drawable.profilepicture))

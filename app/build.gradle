@@ -37,6 +37,7 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+
     testImplementation 'junit:junit:4.13.2'
 
     implementation 'com.firebaseui:firebase-ui-database:8.0.2'
