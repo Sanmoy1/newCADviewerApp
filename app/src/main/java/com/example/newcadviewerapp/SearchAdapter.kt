@@ -20,9 +20,10 @@ class SearchAdapter(options: FirebaseRecyclerOptions<SearchModel>) :FirebaseRecy
     }
 
     override fun onBindViewHolder(holder: SearchViewHolder, position: Int, model: SearchModel) {
-        holder.type.setText("User is : " + model.userType)
-        holder.email.setText("Email is "+ model.email)
-        holder.password.setText(model.password)
+        holder.type.setText("User is  " + model.userType)
+        holder.email.setText("Email: "+ model.email)
+        holder.password.setText("Name: "+model.Name)
+
 
     }
 

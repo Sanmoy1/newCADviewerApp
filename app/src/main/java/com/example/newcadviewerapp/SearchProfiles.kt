@@ -36,7 +36,7 @@ class SearchProfiles: AppCompatActivity() {
             { snapshot:DataSnapshot ->
                 val email = snapshot.child("Email Id").getValue(String::class.java)
                 val userType = snapshot.child("User Type").getValue(String::class.java)
-                val password = snapshot.child("Password").getValue(String::class.java)
+                val password = snapshot.child("Name").getValue(String::class.java)
                 SearchModel(email, userType, password)
             }
             .build()
@@ -58,17 +58,18 @@ class SearchProfiles: AppCompatActivity() {
                 val usersRef = FirebaseDatabase.getInstance().reference.child("Users")
                 val firebaseSearchQuery: Query
 
-             val newText1 = newText.lowercase()
-             val queri = newText1.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+             val newText1 = newText.lowercase() // doing lowercase for all queries
+             val queri = newText1.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } //changing to Capitilize
                 if (queri.isEmpty()) {
                     firebaseSearchQuery = usersRef
                     recyclerSearch.visibility = View.GONE //when nothing written in searchbar
                 } else {
                     recyclerSearch.visibility = View.VISIBLE //if query is written now visible
-                    val searchField = if (queri.contains("@")) {
-                        "Email Id"
-                    } else {
+
+                    val searchField = if (queri.equals("Student")|| queri.equals("Recruiter")) {
                         "User Type"
+                    } else {
+                        "Name"
                     }
                     firebaseSearchQuery = usersRef.orderByChild(searchField)
                         .startAt(queri)
@@ -79,7 +80,7 @@ class SearchProfiles: AppCompatActivity() {
                     { snapshot: DataSnapshot ->
                         val email = snapshot.child("Email Id").getValue(String::class.java)
                         val userType = snapshot.child("User Type").getValue(String::class.java)
-                        val password = snapshot.child("Password").getValue(String::class.java)
+                        val password = snapshot.child("Name").getValue(String::class.java)
                         SearchModel(email, userType, password)
                     }
                     .build()

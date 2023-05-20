@@ -3,7 +3,7 @@ import com.google.firebase.database.PropertyName
 import com.google.gson.annotations.SerializedName
 
 
-data class SearchModel ( val email: String?= "",  val userType:String?="",val password:String?="")
+data class SearchModel ( val email: String?= "",  val userType:String?="",val Name:String?="",)
 {
 
 
