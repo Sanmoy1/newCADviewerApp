@@ -60,7 +60,7 @@ class SearchProfiles: AppCompatActivity() {
 
              val newText1 = newText.lowercase() // doing lowercase for all queries
              val queri = newText1.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } //changing to Capitilize
-                if (queri.isEmpty()) {
+              if(queri.isEmpty()){
                     firebaseSearchQuery = usersRef
                     recyclerSearch.visibility = View.GONE //when nothing written in searchbar
                 } else {

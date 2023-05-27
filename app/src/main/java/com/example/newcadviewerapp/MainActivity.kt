@@ -2,24 +2,15 @@ package com.example.newcadviewerapp
 
 
 
-import android.content.ContentValues.TAG
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import java.util.*
-import kotlin.collections.HashMap
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var postButton:Button
@@ -74,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         dataList.add(dataModel(R.drawable.profilepicture))
         photoAdapter.setDataList(dataList)
 
-        updateFirebaseDatabase()
+        //updateFirebaseDatabase()
 
 
 
@@ -110,7 +101,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 //updatefirebase function to get name and about in the database
-    private fun updateFirebaseDatabase() {
+/*private fun updateFirebaseDatabase() {
     val database = FirebaseDatabase.getInstance()
     val usersRef = database.getReference("Users")
 
@@ -129,5 +120,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+*/
+
 
 }

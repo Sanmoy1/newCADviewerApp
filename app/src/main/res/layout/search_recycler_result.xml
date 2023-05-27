@@ -16,12 +16,13 @@
 
         <ImageView
             android:id="@+id/profile_image"
+            android:background="@drawable/profilepicture"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:contentDescription="@string/pikcha"
-            android:src="@drawable/add_image_icon"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
