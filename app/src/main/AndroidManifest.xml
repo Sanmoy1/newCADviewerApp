@@ -16,12 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewCADViewerApp">
         <activity
-            android:name=".FeedActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".ShareMedia"/>
@@ -30,7 +31,7 @@
         <activity android:name=".RecruiterProfile" />
         <activity android:name=".EditProfile"/>
         <activity android:name=".SearchProfiles"/>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".FeedActivity"/>
     </application>
 
 </manifest>

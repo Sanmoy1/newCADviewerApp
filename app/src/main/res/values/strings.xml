@@ -3,7 +3,7 @@
     <string name="About">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus ut quam luctus tempus eget eu ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sit amet ligula nec nisl tincidunt placerat in vel urna. Curabitur vel risus pulvinar, vulputate risus vitae, elementum sapien. Aliquam erat volutpat. Aenean a cursus magna, at ornare lectus. Mauris viverra luctus dolor vitae blandit. Etiam lobortis non lectus ut gravida.</string>
     <string name="EditProfileButton">Edit Profile</string>
     <string name="Username">Hisagi Amage</string>
-    <string name="NameOfPerson">Ashutosh Das</string>
+    <string name="NameOfPerson">Sanmoy Roy</string>
     <string name="ProfileStat">100</string>
     <string name="posts">Posts</string>
     <string name="followers">Followers</string>
@@ -45,5 +45,6 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="stay_updated_on_your_professional_world">Stay updated on your professional world.</string>
     <string name="pikcha">Pikcha</string>
+    <string name="add_a_comment">Add a comment</string>
 
 </resources>

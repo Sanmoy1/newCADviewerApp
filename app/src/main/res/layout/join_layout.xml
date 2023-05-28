@@ -116,10 +116,10 @@
         android:layout_width="157dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/curve_edge"
-        android:backgroundTint="@android:color/holo_blue_dark"
+
+        android:backgroundTint="#B4DF6C"
         android:text="@string/Continue"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

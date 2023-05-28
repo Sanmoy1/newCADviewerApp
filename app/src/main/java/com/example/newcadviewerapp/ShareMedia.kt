@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.text.TextUtils
 
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -29,6 +30,7 @@ class ShareMedia : AppCompatActivity() {
 
     var storagePostPicRef: StorageReference? = null
     private lateinit var image_preview: ImageView
+    lateinit var close_share_post_button:ImageView
     private lateinit var share_post_buttom: ImageView
     private var imageuri: Uri? = null // nullable uri variable
     private lateinit var post_description: EditText
@@ -40,7 +42,7 @@ class ShareMedia : AppCompatActivity() {
         image_preview = findViewById(R.id.image_preview)
         share_post_buttom = findViewById(R.id.share_post_button)
         post_description = findViewById(R.id.post_description)
-
+        close_share_post_button  = findViewById(R.id.close_share_post_button)
         val contract = registerForActivityResult(ActivityResultContracts.GetContent()) {
             imageuri = it
             image_preview.setImageURI(it)
@@ -107,6 +109,10 @@ class ShareMedia : AppCompatActivity() {
                                 .show()
                             //now the problem is where to move the intent to. is it to the recruiter profile or the student profile
                             progressBar.isDismiss()
+                            close_share_post_button.setOnClickListener{
+                                startActivity(Intent(this,MainActivity::class.java))
+                            }
+
                         } else
                             progressBar.isDismiss()
                     })
