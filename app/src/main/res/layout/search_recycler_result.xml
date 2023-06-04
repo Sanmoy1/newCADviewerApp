@@ -1,48 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
     android:layout_marginTop="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_gradient"
         android:padding="16dp">
 
         <ImageView
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:id="@+id/userImage"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/profile_image"
+            android:background="@drawable/profilepicture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/pikcha"
+
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
-            android:id="@+id/userName"
+            android:id="@+id/password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/userImage"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/userImage"
-            android:layout_marginLeft="12dp"
-            android:textSize="16sp"
             android:textColor="#212121"
-            android:textStyle="bold"/>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintLeft_toRightOf="@id/profile_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/userEmail"
+            />
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/profile_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
 
 
         <TextView
+            android:id="@+id/userType"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/userImage"
-            android:id="@+id/postTitle"
-            android:textSize="16sp"
             android:layout_marginTop="12dp"
-            android:textColor="#212121" />
-
-
-
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/profile_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userEmail" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

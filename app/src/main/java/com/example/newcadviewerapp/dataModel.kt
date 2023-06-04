@@ -1,4 +1,4 @@
 package com.example.newcadviewerapp
 
-data class dataModel(var image:Int) {
+data class dataModel(var image:String) {
 }

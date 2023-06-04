@@ -18,6 +18,7 @@ class JoinActivity: AppCompatActivity() {
     lateinit var studentRegister: RadioButton
     lateinit var recruiterRegister: RadioButton
      lateinit var firebaseDatabase: DatabaseReference
+    lateinit var registername: EditText
     lateinit var s:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,9 @@ class JoinActivity: AppCompatActivity() {
         registerPassword=findViewById(R.id.registerPassword)
         studentRegister=findViewById(R.id.studentRegister)
         recruiterRegister=findViewById(R.id.recruiterRegister)
+        registername=findViewById(R.id.newusername)
+
+
         firebaseDatabase= FirebaseDatabase.getInstance().getReferenceFromUrl("\n" +
                 "https://newcadviewerapp-default-rtdb.firebaseio.com/")//creating the realtime database of firebase instance
 
@@ -61,7 +65,7 @@ class JoinActivity: AppCompatActivity() {
                 else -> {
                     val email: String = registerEmail.text.toString().trim { it <= ' ' }
                     val password: String = registerPassword.text.toString().trim { it <= ' ' }
-
+                    val name: String=registername.text.toString().trim{ it <= ' ' }
                     if(studentRegister.isChecked)// if the registered user is a student
                     {
                         s=studentRegister.text.toString()
@@ -81,6 +85,7 @@ class JoinActivity: AppCompatActivity() {
                             //the user id as firebase.uid
                             firebaseDatabase.child("Users").child(firebaseUser.uid).child("Password").setValue(password )
                             firebaseDatabase.child("Users").child(firebaseUser.uid).child("Email Id").setValue(email)
+                            firebaseDatabase.child("Users").child(firebaseUser.uid).child("Name").setValue(name)
                             firebaseDatabase.child("Users").child(firebaseUser.uid).child("User Type").setValue(s)
                             //val firebaseUser: FirebaseUser = task.result!!.user!!
                             Toast.makeText(

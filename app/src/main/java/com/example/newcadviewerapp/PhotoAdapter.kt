@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class PhotoAdapter(var context: Context): RecyclerView.Adapter<PhotoAdapter.ViewHolder>() {
 
@@ -30,7 +31,8 @@ class PhotoAdapter(var context: Context): RecyclerView.Adapter<PhotoAdapter.View
 
     override fun onBindViewHolder(holder: PhotoAdapter.ViewHolder, position: Int) {
         var data=datalist[position]
-        holder.image.setImageResource(data.image)
+        //holder.image.setImageResource(data.image)
+        Glide.with(context).load(data.image).into(holder.image)
     }
 
     override fun getItemCount() =datalist.size
